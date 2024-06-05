@@ -8,6 +8,7 @@ import {
   ThemeLightNavigation,
 } from "../config/theme";
 import { NavigationContainer } from "@react-navigation/native";
+import HomeScreen from "../screens/HomeScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -21,7 +22,7 @@ export default function AppNavigator() {
     <Provider theme={theme}>
       <NavigationContainer theme={themeNavigation}>
         <Stack.Navigator>
-          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Home" component={HomeScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
